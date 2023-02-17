@@ -1,0 +1,100 @@
+body {
+  background-color: rgb(238, 236, 232);
+}
+
+h1,
+p,
+span,
+a {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+span {
+}
+.parfum-image {
+}
+.parfum-image img {
+  display: block;
+  border-radius: 4px 0 0;
+  max-width: 100%;
+  background-size: cover;
+}
+
+.container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  background-color: #ffff;
+  padding-right: 30px;
+  border-radius: 4px;
+  max-width: 800px;
+}
+
+.subtitle {
+  padding: 30px 0;
+  letter-spacing: 0.3rem;
+  display: block;
+}
+
+.title {
+  font-size: 2.8rem;
+  padding: 20px 0;
+}
+
+.describe {
+  padding: 30px 0;
+  max-width: 50ch;
+  color: #868282;
+  line-height: 1.7rem;
+}
+.price p {
+  font-size: 2rem;
+  color: #075110;
+  margin-bottom: 30px;
+}
+
+.price {
+  display: flex;
+  gap: 50px;
+  align-content: center;
+}
+
+.price span {
+  padding: 0;
+  display: inline-block;
+  align-self: start;
+  text-decoration: line-through;
+}
+
+.btn {
+  display: block;
+  padding: 20px 50px;
+  text-align: center;
+  color: #ffff;
+  background-color: #1e9f2d;
+  border-radius: 5px;
+}
+
+@media (max-width: 800px) {
+  .container {
+    grid-template-columns: 1fr;
+    padding-right: 0;
+  
+   
+  }
+  .title{
+    font-size: 1.7rem;
+  }
+ .content{
+  padding:  30px;
+ }
+ .subtitle {
+  padding: 0;
+ }
+}
